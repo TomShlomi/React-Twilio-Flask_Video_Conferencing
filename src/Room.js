@@ -49,9 +49,8 @@ const Room = ({ roomName, token, handleLogout}) => {
 
   return (
     <div className="room">
-      <h2>Room: {roomName}</h2>
+      <h2>You have been sent to your room: <br/> {roomName}</h2>
       <button onClick={handleLogout}>Log out</button>
-      <div className="remote-participants">{remoteParticipants}</div>
 		<div className="local-participant">
 			{room ? (
 				<Participant
@@ -62,7 +61,7 @@ const Room = ({ roomName, token, handleLogout}) => {
           ''
 			)}
 		</div>
-      
+      <div className="remote-participants">{remoteParticipants}</div>      
 	</div>
   );
 };

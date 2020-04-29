@@ -9,21 +9,23 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text";
   color: #333e5a;
-  min-height: 100%;
+  min-height: 100%;  
 }
 
 header {
-  background: #f0293e;
-  color: #fff;
+  background: #DC143C;
+  color: #000000;
   text-align: center;
   flex-grow: 0;
   margin-bottom: 2em;
+
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 1500;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text";
   padding: 0.4em 0;
 }
 
@@ -38,24 +40,28 @@ h1 {
 }
 
 main {
-  background: #ffffff;
+  background: #000000;
   flex-grow: 1;
 }
 
 form {
   max-width: 300px;
   margin: 0 auto;
+  color: 
 }
 
 h2 {
   font-weight: 300;
   margin-bottom: 1em;
   text-align: center;
+  color: #ffffff;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text";
 }
 
 form > div {
   width: 100%;
   margin-bottom: 1em;
+  color: #ffffff
 }
 form > div > label {
   display: block;
@@ -91,12 +97,6 @@ button:hover {
   right: 20px;
 }
 
-.mute-button {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-}
-
 .room > h3 {
   text-align: center;
   font-weight: 300;
@@ -106,10 +106,12 @@ button:hover {
 .local-participant {
   text-align: center;
   margin-bottom: 2em;
+  position: relative;
+  display:inline;
 }
 .remote-participants {
-  display: flex;
-  flex-wrap: nowrap;
+  display: inline;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 2em 2em;
 }
@@ -119,8 +121,8 @@ button:hover {
   border-radius: 6px;
   display: inline-block;
   margin-right: 10px;
-  width: 720px;
-  height: 600px;
+  width: 360px;
+  height: 300px;
 }
 .participant:last-child {
   margin-right: 0;
