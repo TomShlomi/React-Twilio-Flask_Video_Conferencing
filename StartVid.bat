@@ -1,0 +1,1 @@
+start "Back end" yarn start-api & start "Front end" npm run dev
